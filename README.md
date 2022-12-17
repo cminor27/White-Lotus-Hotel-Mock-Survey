@@ -33,3 +33,6 @@ User Stories:
 15. Inside the form element, you are presented with a textarea for additional comments.
 
 16. Inside the form element, you are presented with a button with id of submit to submit all the inputs.
+
+
+**Note:** Be sure to add < link rel="stylesheet" href="styles.css" > in your HTML to link your stylesheet and apply your CSS.
