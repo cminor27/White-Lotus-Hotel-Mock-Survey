@@ -1,4 +1,4 @@
-/* background image source: 
+/* background image: 
 https://parade.com/.image/t_share/MTkzMDc3MTExNDEyNDk5Njc3/hotel-san-domenico-1.jpg*/
 
 /* body */
@@ -29,7 +29,7 @@ body::before {
     width: 100%;
     z-index: -1;
     background: var(--color-darkblue);
-    background-image: linear-gradient( 115deg, rgba(255,255,255, 0.3), rgba(136, 136, 206, 0.7) ) url(https://parade.com/.image/t_share/MTkzMDc3MTExNDEyNDk5Njc3/hotel-san-domenico-1.jpg);
+    background-image: linear-gradient( 115deg, rgba(255,255,255, 0.3), rgba(136, 136, 206, 0.7) ), url(https://parade.com/.image/t_share/MTkzMDc3MTExNDEyNDk5Njc3/hotel-san-domenico-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
