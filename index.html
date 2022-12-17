@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>White Lotus Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">The White Lotus Hotel <br> Guest Satisfaction Survey</h1>
+        <p id="description" class="description text-center">
+          Thank you for staying with us! Please fill out this form with the required information
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="110"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which of the following describes you best?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current occupation</option>
+            <option value="student">Student</option>
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self-employed</option>
+            <option value="retired">Retired</option>
+            <option value="not-employed">Not employed</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Gender</p>
+          <label>
+            <input
+              name="gender"
+              value="male"
+              type="radio"
+              class="input-radio"
+              required
+            />Male</label
+          >
+          <label>
+            <input
+              name="gender"
+              value="female"
+              type="radio"
+              class="input-radio"
+            />Female</label
+          >
+
+          <label>
+            <input
+              name="gender"
+              value="transgender"
+              type="radio"
+              class="input-radio"
+            />Transgender</label
+          >
+
+          <label>
+            <input
+              name="gender"
+              value="non-binary"
+              type="radio"
+              class="input-radio"
+            />Non-binary</label
+          >
+
+          <label
+            ><input
+              name="gender"
+              value="not-say"
+              type="radio"
+              class="input-radio"
+            />Prefer not to say</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>
+            How might you measure service quality in a hotel?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="hotel-service-quality"
+              value="unserviceable-items"
+              type="checkbox"
+              class="input-checkbox"
+            />Any unserviceable item in the room (light, TV, radio, mini-bar, etc.)</label
+          >
+          <label>
+            <input
+              name="hotel-service-quality"
+              value="minutes-waiting"
+              type="checkbox"
+              class="input-checkbox"
+            />Number of minutes waiting to check in</label
+          >
+          <label
+            ><input
+              name="hotel-service-quality"
+              value="room-availability"
+              type="checkbox"
+              class="input-checkbox"
+            />Room available by 3:00 PM</label
+          >
+          <label
+            ><input
+              name="hotel-service-quality"
+              value="plants"
+              type="checkbox"
+              class="input-checkbox"
+            />Number of plants in the room</label
+          >
+          <label
+            ><input
+              name="hotel-service-quality"
+              value="interior-design"
+              type="checkbox"
+              class="input-checkbox"
+            />Interior design</label
+          >
+          <label
+            ><input
+              name="hotel-service-quality"
+              value="cleaning"
+              type="checkbox"
+              class="input-checkbox"
+            />Regularity of cleaning</label
+          >
+          <label
+            ><input
+              name="hotel-service-quality"
+              value="room-bill"
+              type="checkbox"
+              class="input-checkbox"
+            />Accuracy of room bill</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>1) Overall, how friendly was the hotel staff?</p>
+          <label>
+            <input
+              name="friendly"
+              value="extremely-f"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely friendly</label
+          >
+          <label>
+            <input
+              name="friendly"
+              value="quite-f"
+              type="radio"
+              class="input-radio"
+            />Quite friendly</label
+          >
+          <label>
+            <input
+              name="friendly"
+              value="mod-f"
+              type="radio"
+              class="input-radio"
+            />Moderately friendly</label
+          >
+          <label>
+            <input
+              name="friendly"
+              value="somewhat-f"
+              type="radio"
+              class="input-radio"
+            />Somewhat friendly</label
+          >
+          <label>
+            <input
+              name="friendly"
+              value="not-f"
+              type="radio"
+              class="input-radio"
+            />Not at all friendly</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>2) Overall, how polite was the hotel staff?</p>
+          <label>
+            <input
+              name="polite"
+              value="extremely-p"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely Polite</label
+          >
+          <label>
+            <input
+              name="polite"
+              value="quite-p"
+              type="radio"
+              class="input-radio"
+            />Quite polite</label
+          >
+          <label>
+            <input
+              name="polite"
+              value="mod-p"
+              type="radio"
+              class="input-radio"
+            />Moderately polite</label
+          >
+          <label>
+            <input
+              name="polite"
+              value="somewhat-p"
+              type="radio"
+              class="input-radio"
+            />Somewhat polite</label
+          >
+          <label>
+            <input
+              name="polite"
+              value="not-p"
+              type="radio"
+              class="input-radio"
+            />Not at all polite</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>3) Overall, how professional was the hotel staff?</p>
+          <label>
+            <input
+              name="staff-professionalism"
+              value="extremely-prof"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely professional</label
+          >
+          <label>
+            <input
+              name="staff-professionalism"
+              value="quite-prof"
+              type="radio"
+              class="input-radio"
+            />Quite professional</label
+          >
+          <label>
+            <input
+              name="staff-professionalism"
+              value="mod-prof"
+              type="radio"
+              class="input-radio"
+            />Moderately professional</label
+          >
+          <label>
+            <input
+              name="staff-professionalism"
+              value="somewhat-prof"
+              type="radio"
+              class="input-radio"
+            />Somewhat professional</label
+          >
+          <label>
+            <input
+              name="staff-professionalism"
+              value="not-prof"
+              type="radio"
+              class="input-radio"
+            />Not at all professional</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>4) How quick was the check-in process?</p>
+          <label>
+            <input
+              name="check-in"
+              value="extremely-quick"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely quick</label
+          >
+          <label>
+            <input
+              name="check-in"
+              value="quite-quick"
+              type="radio"
+              class="input-radio"
+            />Quite quick</label
+          >
+          <label>
+            <input
+              name="check-in"
+              value="mod-quick"
+              type="radio"
+              class="input-radio"
+            />Moderately quick</label
+          >
+          <label>
+            <input
+              name="check-in"
+              value="somewhat-quick"
+              type="radio"
+              class="input-radio"
+            />Somewhat quick</label
+          >
+          <label>
+            <input
+              name="check-in"
+              value="not-q"
+              type="radio"
+              class="input-radio"
+            />Not at all quick</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>5) How clean was your room upon arrival?</p>
+          <label>
+            <input
+              name="clean-room"
+              value="extremely-clean"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely clean</label
+          >
+          <label>
+            <input
+              name="clean-room"
+              value="quite-clean"
+              type="radio"
+              class="input-radio"
+            />Quite clean</label
+          >
+          <label>
+            <input
+              name="clean-room"
+              value="mod-clean"
+              type="radio"
+              class="input-radio"
+            />Moderately clean</label
+          >
+          <label>
+            <input
+              name="clean-room"
+              value="somewhat-clean"
+              type="radio"
+              class="input-radio"
+            />Somewhat clean</label
+          >
+          <label>
+            <input
+              name="clean-room"
+              value="not-clean"
+              type="radio"
+              class="input-radio"
+            />Not at all clean</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>6) How well did the housekeeping staff clean your room?</p>
+          <label>
+            <input
+              name="housekeeping"
+              value="extremely-well"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely well</label
+          >
+          <label>
+            <input
+              name="housekeeping"
+              value="quite-well"
+              type="radio"
+              class="input-radio"
+            />Quite well</label
+          >
+          <label>
+            <input
+              name="housekeeping"
+              value="mod-well"
+              type="radio"
+              class="input-radio"
+            />Moderately well</label
+          >
+          <label>
+            <input
+              name="housekeeping"
+              value="somewhat-well"
+              type="radio"
+              class="input-radio"
+            />Somewhat well</label
+          >
+          <label>
+            <input
+              name="housekeeping"
+              value="not-well"
+              type="radio"
+              class="input-radio"
+            />Not at all well</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>7) Overall, how well-equipped was your room?</p>
+          <label>
+            <input
+              name="well-equipped"
+              value="extremely-equipped"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely well-equipped</label
+          >
+          <label>
+            <input
+              name="well-equipped"
+              value="quite-equipped"
+              type="radio"
+              class="input-radio"
+            />Quite well-equipped</label
+          >
+          <label>
+            <input
+              name="well-equipped"
+              value="mod-equipped"
+              type="radio"
+              class="input-radio"
+            />Moderately well-equipped</label
+          >
+          <label>
+            <input
+              name="well-equipped"
+              value="somewhat-equipped"
+              type="radio"
+              class="input-radio"
+            />Somewhat well-equipped</label
+          >
+          <label>
+            <input
+              name="well-equipped"
+              value="not-equipped"
+              type="radio"
+              class="input-radio"
+            />Not at all well-equipped</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>8) How helpful was the concierge throughout your stay?</p>
+          <label>
+            <input
+              name="concierge"
+              value="extremely-helpful"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely helpful</label
+          >
+          <label>
+            <input
+              name="concierge"
+              value="quite-helpful"
+              type="radio"
+              class="input-radio"
+            />Quite helpful</label
+          >
+          <label>
+            <input
+              name="concierge"
+              value="mod-helpful"
+              type="radio"
+              class="input-radio"
+            />Moderately helpful</label
+          >
+          <label>
+            <input
+              name="concierge"
+              value="somewhat-helpful"
+              type="radio"
+              class="input-radio"
+            />Somewhat helpful</label
+          >
+          <label>
+            <input
+              name="concierge"
+              value="not-helpful"
+              type="radio"
+              class="input-radio"
+            />Not at all helpful</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>9) How comfortable were your bed linens?</p>
+          <label>
+            <input
+              name="bed-linens"
+              value="extremely-comfortable"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely comfortable</label
+          >
+          <label>
+            <input
+              name="bed-linens"
+              value="quite-comfortable"
+              type="radio"
+              class="input-radio"
+            />Quite comfortable</label
+          >
+          <label>
+            <input
+              name="bed-linens"
+              value="mod-comfortable"
+              type="radio"
+              class="input-radio"
+            />Moderately comfortable</label
+          >
+          <label>
+            <input
+              name="bed-linens"
+              value="somewhat-comfortable"
+              type="radio"
+              class="input-radio"
+            />Somewhat comfortable</label
+          >
+          <label>
+            <input
+              name="bed-linens"
+              value="not-comfortable"
+              type="radio"
+              class="input-radio"
+            />Not at all comfortable</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>10) Overall, how quickly did the hotel staff respond to your requests?</p>
+          <label>
+            <input
+              name="response"
+              value="extremely-quick"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely quickly</label
+          >
+          <label>
+            <input
+              name="response"
+              value="quite-quick"
+              type="radio"
+              class="input-radio"
+            />Quite quickly</label
+          >
+          <label>
+            <input
+              name="response"
+              value="mod-quick"
+              type="radio"
+              class="input-radio"
+            />Moderately quick</label
+          >
+          <label>
+            <input
+              name="response"
+              value="somewhat-quick"
+              type="radio"
+              class="input-radio"
+            />Somewhat quickly</label
+          >
+          <label>
+            <input
+              name="response"
+              value="not-quick"
+              type="radio"
+              class="input-radio"
+            />Not at all quickly</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>11) How convenient were the hours of the food service options at our hotel?</p>
+          <label>
+            <input
+              name="food-hours"
+              value="extremely-convenient"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely convenient</label
+          >
+          <label>
+            <input
+              name="food-hours"
+              value="quite-convenient"
+              type="radio"
+              class="input-radio"
+            />Quite convenient</label
+          >
+          <label>
+            <input
+              name="food-hours"
+              value="mod-convenient"
+              type="radio"
+              class="input-radio"
+            />Moderately convenient</label
+          >
+          <label>
+            <input
+              name="food-hours"
+              value="somewhat-convenient"
+              type="radio"
+              class="input-radio"
+            />Somewhat convenient</label
+          >
+          <label>
+            <input
+              name="food-hours"
+              value="not-convenient"
+              type="radio"
+              class="input-radio"
+            />Not at all convenient</label
+          >
+          <label>
+            <input
+              name="food-hours"
+              value="not-applicable"
+              type="radio"
+              class="input-radio"
+            />Not applicable</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>12) How delicious was the hotel breakfast service?</p>
+          <label>
+            <input
+              name="hotel-breakfast"
+              value="extremely-delicious"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely delicious</label
+          >
+          <label>
+            <input
+              name="hotel-breakfast"
+              value="quite-delicious"
+              type="radio"
+              class="input-radio"
+            />Quite delicious</label
+          >
+          <label>
+            <input
+              name="hotel-breakfast"
+              value="mod-delicious"
+              type="radio"
+              class="input-radio"
+            />Moderately delicious</label
+          >
+          <label>
+            <input
+              name="hotel-breakfast"
+              value="somewhat-delicious"
+              type="radio"
+              class="input-radio"
+            />Somewhat delicious</label
+          >
+          <label>
+            <input
+              name="hotel-breakfast"
+              value="not-delicious"
+              type="radio"
+              class="input-radio"
+            />Not at all delicious</label
+          >
+          <label>
+            <input
+              name="hotel-breakfast"
+              value="not-applicable"
+              type="radio"
+              class="input-radio"
+            />Not applicable</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>13) How pleased were you with the quality of the food offered at our hotel?</p>
+          <label>
+            <input
+              name="quality-food"
+              value="extremely-pleased"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely pleased</label
+          >
+          <label>
+            <input
+              name="quality-food"
+              value="quite-pleased"
+              type="radio"
+              class="input-radio"
+            />Quite pleased</label
+          >
+          <label>
+            <input
+              name="quality-food"
+              value="mod-pleased"
+              type="radio"
+              class="input-radio"
+            />Moderately pleased</label
+          >
+          <label>
+            <input
+              name="quality-food"
+              value="somewhat-pleased"
+              type="radio"
+              class="input-radio"
+            />Somewhat pleased</label
+          >
+          <label>
+            <input
+              name="quality-food"
+              value="not-pleased"
+              type="radio"
+              class="input-radio"
+            />Not at all pleased</label
+          >
+          <label>
+            <input
+              name="quality-food"
+              value="not-applicable"
+              type="radio"
+              class="input-radio"
+            />Not applicable</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>14) How affordable was the hotel breakfast service?</p>
+          <label>
+            <input
+              name="breakfast-service"
+              value="extremely-affordable"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely affordable</label
+          >
+          <label>
+            <input
+              name="breakfast-service"
+              value="quite-affordable"
+              type="radio"
+              class="input-radio"
+            />Quite affordable</label
+          >
+          <label>
+            <input
+              name="breakfast-service"
+              value="mod-affordable"
+              type="radio"
+              class="input-radio"
+            />Moderately affordable</label
+          >
+          <label>
+            <input
+              name="breakfast-service"
+              value="somewhat-affordable"
+              type="radio"
+              class="input-radio"
+            />Somewhat affordable</label
+          >
+          <label>
+            <input
+              name="breakfast-service"
+              value="not-affordable"
+              type="radio"
+              class="input-radio"
+            />Not at all affordable</label
+          >
+
+          <label>
+            <input
+              name="breakfast-service"
+              value="not-applicable"
+              type="radio"
+              class="input-radio"
+            />Not applicable</label
+          >         
+          </div>
+        <div class="form-group">
+          <p>15) How affordable was your stay at our hotel?</p>
+          <label>
+            <input
+              name="hotel-affordability"
+              value="extremely-affordable"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely affordable</label
+          >
+          <label>
+            <input
+              name="hotel-affordability"
+              value="quite-affordable"
+              type="radio"
+              class="input-radio"
+            />Quite affordable</label
+          >
+          <label>
+            <input
+              name="hotel-affordability"
+              value="mod-affordable"
+              type="radio"
+              class="input-radio"
+            />Moderately affordable</label
+          >
+          <label>
+            <input
+              name="hotel-affordability"
+              value="somewhat-affordable"
+              type="radio"
+              class="input-radio"
+            />Somewhat affordable</label
+          >
+          <label>
+            <input
+              name="hotel-affordability"
+              value="not-affordable"
+              type="radio"
+              class="input-radio"
+            />Not at all affordable</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>16) How would you rate your overall level of satisfaction with us?</p>
+          <div class="stars">
+  <form action="">
+    <input class="star star-5" id="star-5" type="radio" name="star" value="star"/>
+    <label class="star star-5" for="star-5"></label>
+    <input class="star star-4" id="star-4" type="radio" name="star" value="star"/>
+    <label class="star star-4" for="star-4"></label>
+    <input class="star star-3" id="star-3" type="radio" name="star" value="star"/>
+    <label class="star star-3" for="star-3"></label>
+    <input class="star star-2" id="star-2" type="radio" name="star" value="star"/>
+    <label class="star star-2" for="star-2"></label>
+    <input class="star star-1" id="star-1" type="radio" name="star" value="star"/>
+    <label class="star star-1" for="star-1"></label>
+  </form>
+</div>
+
+        <div class="form-group">
+          <p>17) How likely are you to stay at our hotel again?</p>
+          <label>
+            <input
+              name="visit-again"
+              value="extremely-likely"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely likely</label
+          >
+          <label>
+            <input
+              name="visit-again"
+              value="quite-likely"
+              type="radio"
+              class="input-radio"
+            />Quite likely</label
+          >
+          <label>
+            <input
+              name="visit-again"
+              value="mod-likely"
+              type="radio"
+              class="input-radio"
+            />Moderately likely</label
+          >
+          <label>
+            <input
+              name="visit-again"
+              value="somewhat likely"
+              type="radio"
+              class="input-radio"
+            />Somewhat likely</label
+          >
+          <label>
+            <input
+              name="visit-again"
+              value="not-likely"
+              type="radio"
+              class="input-radio"
+            />Not at all likely</label
+          >
+          </div>
+
+
+        <div class="form-group">
+          <p>18) How likely is it that you would recommend our hotel to a friend or colleague?</p>
+          <label>
+            <input
+              name="discouraging-other"
+              value="extremely-likely"
+              type="radio"
+              class="input-radio"
+              required
+            />Extremely likely</label
+          >
+          <label>
+            <input
+              name="discouraging-other"
+              value="quite-likely"
+              type="radio"
+              class="input-radio"
+            />Quite likely</label
+          >
+          <label>
+            <input
+              name="discouraging-other"
+              value="mod-likely"
+              type="radio"
+              class="input-radio"
+            />Moderately likely</label
+          >
+          <label>
+            <input
+              name="discouraging-other"
+              value="somewhat-likely"
+              type="radio"
+              class="input-radio"
+            />Somewhat likely</label
+          >
+          <label>
+            <input
+              name="discouraging-other"
+              value="not-likely"
+              type="radio"
+              class="input-radio"
+            />Not at all likely</label
+          >
+          </div>
+
+        <div class="form-group">
+          <p>
+            19) And finally, how did you hear about us?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="advertisement"
+              value="search-engine"
+              type="checkbox"
+              class="input-checkbox"
+            />Search Engine (Google, Bing, etc.)</label
+          >
+          <label>
+            <input
+              name="advertisement"
+              value="social-media"
+              type="checkbox"
+              class="input-checkbox"
+            />Social Media</label
+          >
+          <label
+            ><input
+              name="advertisement"
+              value="radio"
+              type="checkbox"
+              class="input-checkbox"
+            />Radio</label
+          >
+          <label
+            ><input
+              name="advertisement"
+              value="television"
+              type="checkbox"
+              class="input-checkbox"
+            />Television</label
+          >
+          <label
+            ><input
+              name="advertisement"
+          value="streaming-service"
+              type="checkbox"
+              class="input-checkbox"
+            />Streaming Service Ad</label
+          >
+          <label
+            ><input
+              name="advertisement"
+              value="newspaper"
+              type="checkbox"
+              class="input-checkbox"
+            />Newspaper/Online Newspaper</label
+          >
+          <label
+            ><input
+              name="advertisement"
+              value="billboard"
+              type="checkbox"
+              class="input-checkbox"
+            />Billboard</label
+          >
+          <label
+            ><input
+              name="advertisement"
+              value="word-of-mouth"
+              type="checkbox"
+              class="input-checkbox"
+            />Word of mouth</label
+          >
+          <label
+            ><input
+              name="advertisement"
+              value="referral"
+              type="checkbox"
+              class="input-checkbox"
+            />Referral</label
+          >
+          <label
+            ><input
+              name="advertisement"
+              value="other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>20) Do you have any other comments, questions, or concerns?<span class="clue">(optional)</span></label
+          >
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
